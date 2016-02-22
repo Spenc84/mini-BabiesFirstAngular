@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="friendsList">
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body ng-controller="mainCtrl">
+
+  <!-- <label>My new friend</label> -->
+  <input placeholder="My new friend" ng-model="newFriend" type="text">
+  <button ng-click="addFriend()" type="text">Add Friend</button>
+  <h1>My Friends</h1>
+  <p ng-repeat="friend in friends">{{ friend }}</p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/mainCtrl.js"></script>
+</body>
+</html>
